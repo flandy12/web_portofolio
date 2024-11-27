@@ -57,3 +57,9 @@ a {
   font-style: normal;
 }
 
+.bg-default {
+  background: url('/images/asset(3).jpg');
+  width: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+}
