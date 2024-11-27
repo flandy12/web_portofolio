@@ -111,15 +111,20 @@ const HomePage = () => {
                         <div class="border-r-gray-100 bordr">
                             <h2 class="text-4xl font-bold bebas-neue-regular text-lime-400">Experience</h2>
                             <p class="mt-4 ">
-                                My books are often featured in popular magazines and journals. Receiving feedback from professionals is extremely important for me.
-                            </p>import Calculator from './project/calculator';
+                                Perjalanan Saya Menjadi Developer Website
+                                Dari hobi hingga profesi, perjalanan saya sebagai seorang developer website adalah proses yang penuh tantangan dan pembelajaran.
+                            </p>
+
+                            <p class="mt-4 ">
+                                Sebelum saya terjun di dunia fronted saya bekerja di bagian IT SUPPORT. Perusahaan <strong >CK HELMER</strong> <br/> Perusahaan ini bergerak di bidang Booth Kontruktor & Event Organizer.
+                            </p>
 
                         </div>
                         <div class="mt-8 grid grid-cols-1 gap-8 border-l-4 border-l-gray-100 ps-5">
                             <div>
                             <h3 class="font-semibold text-lime-400 text-xl">2021</h3>
 
-                            <p class="mt-2">- IT Support In Company</p>
+                            <p class="mt-2">- IT Support</p>
                             </div>
                             <div>
                             <h3 class="font-semibold text-lime-400 text-xl">2022 - 2023</h3>
@@ -213,7 +218,7 @@ const HomePage = () => {
                         <h2 class="text-4xl font-bold text-black">Project</h2>
                     </div>
                     <p class="mt-4 ">
-                        I write about marketing, branding, and personal experiences in internet marketing and communications.
+                        Berikut adalah project yang telah dibuat
                     </p>
                 </div>
                 <div class="mt-8 grid grid-cols-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -234,6 +239,16 @@ const HomePage = () => {
                         <h3 class="mt-4 text-lime-500 font-semibold">"Calculator Project"</h3>
                         </div>
                     </a>
+
+                    <a href="https://umc.megacareerexpo.com/">
+                        <div class="text-center">
+                        <div class="bg-black">
+                        <img src="/images/uniqlo.png" alt="Book 1" class="rounded shadow hover:opacity-30 h-[215px] object-cover" />
+                        </div>
+                        <h3 class="mt-4 text-lime-500 font-semibold">"Uniqlo Project"</h3>
+                        </div>
+                    </a>
+
                 </div>
                </div>
             </section>
