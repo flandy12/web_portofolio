@@ -42,7 +42,7 @@ const HomePage = () => {
 
                 <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="w-full h-full">
-                    <img src="/images/profile-portofolio.jpg" alt="Coding" className="w-full h-full object-cover" className="rounded-lg"/>
+                    <img src="/images/profile-portofolio.jpg" alt="Coding" className="w-full h-full object-cover"/>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg shadow-md max-w-4xl mx-auto">
                 <h1 className="text-3xl font-bold text-gray-800 mb-4">Halo, nama saya <span className="text-lime-500">Flandy Rockyliano Mamun</span></h1>
@@ -237,14 +237,14 @@ const HomePage = () => {
                         </div>
                     </Link>
 
-                    <a href="https://umc.megacareerexpo.com/">
+                    <Link href="https://umc.megacareerexpo.com/">
                         <div className="text-center">
                         <div className="bg-black">
                         <img src="/images/uniqlo.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-[215px] object-cover" />
                         </div>
                         <h3 className="mt-4 text-lime-500 font-semibold">Uniqlo Project</h3>
                         </div>
-                    </a>
+                    </Link>
 
                 </div>
                </div>
