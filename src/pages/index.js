@@ -192,7 +192,7 @@ const HomePage = () => {
                                 <h3 className="mt-4 text-gray-300 font-semibold">How to Walk Away</h3>
                             </div>
                             <div className="text-center" onClick={showModalAction}>
-                                <img src="/images/asset-image-3.png" alt="Book 2" className="rounded shadow w-full h-auto" title="The World's Game"/>
+                                <img src="/images/asset-image-3.png" alt="Book 2" className="rounded shadow w-full h-auto" title="The Worlds Game"/>
                                 <h3 className="mt-4 text-gray-300 font-semibold">The Worlds Game</h3>
                             </div>
                             <div className="text-center" onClick={showModalAction}>
