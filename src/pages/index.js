@@ -29,18 +29,17 @@ const HomePage = () => {
         
             <div className="container mx-auto">
                 <section className="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-12 py-20">
-                <div className="text-center lg:text-left lg:w-1/2">
-                    <h1 className="text-9xl font-bold bebas-neue-regular text-lime-400">
-                        Fronted Developer
-                    </h1>
-                  
-                </div>
+                    <div className="text-center lg:text-left lg:w-1/2 px-5">
+                        <h1 className="text-6xl xl:text-9xl lg:text-9xl font-bold bebas-neue-regular text-lime-400">
+                            Fronted Developer
+                        </h1>
+                    </div>
                 <div className="lg:w-1/2">
                     <img src="/images/profile-portofolio-2.jpg" alt="Profile" className="mx-auto"/>
                 </div>
                 </section>
 
-                <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-2">
                 <div className="w-full h-full">
                     <img src="/images/profile-portofolio.jpg" alt="Coding" className="w-full h-full object-cover"/>
                 </div>
@@ -102,9 +101,9 @@ const HomePage = () => {
 
                 </section>
                 
-                <section className="mt-16 relative ">
+                <section className="mt-16 relative container mx-auto">
                 
-                <div className="grid grid-cols-3 gap-5 justify-items-center lg:grid sm:flex flex-col">
+                <div className="grid xl:grid-cols-3 lg:grid-cols-3 xl:gap-5 lg:gap-5 md:gap-0 sm:gap-0 justify-items-center lg:grid md:grid md:grid-cols1 sm:flex sm:flex-col px-5 space-y-5">
                         <div className="border-r-gray-100 bordr">
                             <h2 className="text-4xl font-bold bebas-neue-regular text-lime-400">Experience</h2>
                             <p className="mt-4 ">
@@ -117,7 +116,7 @@ const HomePage = () => {
                             </p>
 
                         </div>
-                        <div className="mt-8 grid grid-cols-1 gap-8 border-l-4 border-l-gray-100 ps-5">
+                        <div className="mt-8 grid grid-cols-1 gap-8 border-l-4 border-l-gray-100 ps-5 w-full">
                             <div>
                             <h3 className="font-semibold text-lime-400 text-xl">2021</h3>
 
@@ -163,9 +162,9 @@ const HomePage = () => {
                 
                 </section>
 
-                <section className="my-8 p-20 bg-lime-400 rounded-xl">
-                    <h2 className="text-3xl font-bold text-black mb-2 uppercase">Keahlian & Tools</h2>
-                    <ul className="list-disc list-inside text-2xl text-black space-y-2">
+                <section className="my-8 p-5 xl:p-20 lg:p-20 md:p-10  bg-lime-400 rounded-xl">
+                    <h2 className=" font-bold text-black mb-2 uppercase text-2xl xl:text-3xl sm:text-2xl">Keahlian & Tools</h2>
+                    <ul className="list-disc list-inside sm:text-base text-black space-y-2">
                     <li><span className="font-semibold">Frontend:</span> React.js, Vue.js, Tailwind CSS, Next.js</li>
                     <li><span className="font-semibold">Backend:</span> Laravel</li>
                     <li><span className="font-semibold">Database:</span> MySQL, MongoDB</li>
@@ -179,7 +178,7 @@ const HomePage = () => {
 
             <section className="mt-16 py-8 bg-black">
                 <div className="mx-auto container">
-                    <div className="grid grid-cols-1 md:grid-cols-2 items-center place-items-center gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 items-center place-items-center gap-8 px-5">
                         <div className="flex items-center flex-col px-10 text-center">
                             <h2 className="text-4xl font-bold text-white">Certificate</h2>
                             <p className="mt-4 text-gray-300">
@@ -209,7 +208,7 @@ const HomePage = () => {
             </section>
 
             <section>
-                <div className="container mx-auto py-20">
+                <div className="container mx-auto py-20 px-5">
                 <div className="text-center">
                     <div className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" >
                         <h2 className="text-4xl font-bold text-black">Project</h2>
@@ -218,7 +217,7 @@ const HomePage = () => {
                         Berikut adalah project yang telah dibuat
                     </p>
                 </div>
-                <div className="mt-8 grid grid-cols-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="mt-8 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 md:grid-cols-2 gap-8">
                     
                     <Link href="/project/login">
                         <div className="text-center">
@@ -240,7 +239,7 @@ const HomePage = () => {
                     <Link href="https://umc.megacareerexpo.com/">
                         <div className="text-center">
                         <div className="bg-black">
-                        <img src="/images/uniqlo.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-[215px] object-cover" />
+                        <img src="/images/uniqlo.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-full xl:h-[215px] lg:h-[215px] md:h-[215px] object-cover" />
                         </div>
                         <h3 className="mt-4 text-lime-500 font-semibold">Uniqlo Project</h3>
                         </div>
