@@ -217,7 +217,7 @@ const HomePage = () => {
                         Berikut adalah project yang telah dibuat
                     </p>
                 </div>
-                <div className="mt-8 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 md:grid-cols-2 gap-8">
+                <div className="mt-8 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-8">
                     
                     <Link href="/project/login">
                         <div className="text-center">
@@ -242,6 +242,15 @@ const HomePage = () => {
                         <img src="/images/uniqlo.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-full xl:h-[215px] lg:h-[215px] md:h-[215px] object-cover" />
                         </div>
                         <h3 className="mt-4 text-lime-500 font-semibold">Uniqlo Project</h3>
+                        </div>
+                    </Link>
+
+                    <Link href="/project/snake">
+                        <div className="text-center">
+                        <div className="bg-black">
+                        <img src="/images/snake.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-full xl:h-[215px] lg:h-[215px] md:h-[215px] object-cover" />
+                        </div>
+                        <h3 className="mt-4 text-lime-500 font-semibold">Snake Project</h3>
                         </div>
                     </Link>
 
