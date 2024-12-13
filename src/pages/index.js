@@ -254,6 +254,15 @@ const HomePage = () => {
                         </div>
                     </Link>
 
+                    <Link href="/project/chart">
+                        <div className="text-center">
+                        <div className="bg-black">
+                        <img src="/images/chart.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-full xl:h-[215px] lg:h-[215px] md:h-[215px] object-cover" />
+                        </div>
+                        <h3 className="mt-4 text-lime-500 font-semibold">Chat Project</h3>
+                        </div>
+                    </Link>
+
                 </div>
                </div>
             </section>
