@@ -181,26 +181,29 @@ const HomePage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 items-center place-items-center gap-8 px-5">
                         <div className="flex items-center flex-col px-10 text-center">
                             <h2 className="text-4xl font-bold text-white">Certificate</h2>
-                            <p className="mt-4 text-gray-300">
+                            {/* <p className="mt-4 text-gray-300">
                                 I write about marketing, branding, and personal experiences in internet marketing and communications.
-                            </p>
+                            </p> */}
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                            <div className="text-center" onClick={showModalAction} data-img="/images/image-asset.jpg" >
-                                <img src="/images/image-asset.jpg" alt="Book 1" className="rounded shadow w-full h-auto" title="How to Walk Away"/>
-                                <h3 className="mt-4 text-gray-300 font-semibold">How to Walk Away</h3>
+                            <div className="text-center" onClick={showModalAction} data-img="/images/HTML_SOLOLEARN.jpg" >
+                                <img src="/images/HTML_SOLOLEARN.jpg" alt="Book 1" className="rounded shadow w-full h-auto" title="Introduction to HTML"/>
+                                <h3 className="mt-4 text-gray-300 font-semibold">Introduction to HTML
+                                </h3>
                             </div>
                             <div className="text-center" onClick={showModalAction}>
-                                <img src="/images/asset-image-3.png" alt="Book 2" className="rounded shadow w-full h-auto" title="The Worlds Game"/>
-                                <h3 className="mt-4 text-gray-300 font-semibold">The Worlds Game</h3>
+                                <img src="/images/JAVASCRIPT_SOLOLEARN.jpg" alt="Book 2" className="rounded shadow w-full h-auto" title="JavaScript Intermediate"/>
+                                <h3 className="mt-4 text-gray-300 font-semibold">JavaScript Intermediate</h3>
                             </div>
                             <div className="text-center" onClick={showModalAction}>
-                                <img src="/images/asset-image-4.png" alt="Book 3" className="rounded shadow w-full h-auto" title="Digital Branding"/>
-                                <h3 className="mt-4 text-gray-300 font-semibold">Digital Branding</h3>
+                                <img src="/images/JAVASCRIPT2_SOLOLEARN.jpg" alt="Book 3" className="rounded shadow w-full h-auto" title="Introduction to JavaScript"/>
+                                <h3 className="mt-4 text-gray-300 font-semibold">Introduction to JavaScript</h3>
                             </div>
                             <div className="text-center" onClick={showModalAction}>
-                                <img src="/images/asset-image-5.png" alt="Book 4" className="rounded shadow w-full h-auto" title="Learn to be Yourself"/>
-                                <h3 className="mt-4 text-gray-300 font-semibold">Learn to be Yourself</h3>
+                                <img src="/images/CSS_SOLOLEARN.jpg" alt="Book 4" className="rounded shadow w-full h-auto" title="Introduction to CSS
+"/>
+                                <h3 className="mt-4 text-gray-300 font-semibold">Introduction to CSS
+</h3>
                             </div>
                         </div>
                     </div>
