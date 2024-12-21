@@ -72,35 +72,7 @@ const HomePage = () => {
 
                 </section>
 
-                <section>
-
-                    <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" className={`${show_modal == false ? 'hidden ' : ''}overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full flex`}>
-                        <div className="relative p-4 w-full max-w-2xl max-h-full">
-                          
-                            <div className="relative bg-white rounded-lg shadow">
-                               
-                                <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                                    <h3 className="text-xl font-semibold text-gray-900 ">
-                                        {title_modal}
-                                    </h3>
-                                    <button type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center " data-modal-hide="static-modal" onClick={showModalAction}>
-                                        <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                                        </svg>
-                                        <span className="sr-only">Close modal</span>
-                                    </button>
-                                </div>
-                               
-                                <div className="p-4 md:p-5 space-y-4">
-                                     <img src={image_modal} alt="Book 2" className="rounded shadow w-full h-auto"/>
-                                </div>
-                        
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-                
+          
                 <section className="mt-16 relative container mx-auto">
                 
                 <div className="grid xl:grid-cols-3 lg:grid-cols-3 xl:gap-5 lg:gap-5 md:gap-0 sm:gap-0 justify-items-center lg:grid md:grid md:grid-cols1 sm:flex sm:flex-col px-5 space-y-5">
@@ -186,24 +158,30 @@ const HomePage = () => {
                             </p> */}
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                            <div className="text-center" onClick={showModalAction} data-img="/images/HTML_SOLOLEARN.jpg" >
-                                <img src="/images/HTML_SOLOLEARN.jpg" alt="Book 1" className="rounded shadow w-full h-auto" title="Introduction to HTML"/>
-                                <h3 className="mt-4 text-gray-300 font-semibold">Introduction to HTML
-                                </h3>
+                            <div className="text-center" data-img="/images/HTML_SOLOLEARN.jpg" >
+                                <Link href="https://www.sololearn.com/certificates/CC-K4PXGPOY" target="_blank">
+                                    <img src="/images/HTML_SOLOLEARN.jpg" alt="Book 1" className="rounded shadow w-full h-auto" title="Introduction to HTML"/>
+                                    <h3 className="mt-4 text-gray-300 font-semibold">Introduction to HTML
+                                    </h3>
+                                </Link>
                             </div>
-                            <div className="text-center" onClick={showModalAction}>
-                                <img src="/images/JAVASCRIPT_SOLOLEARN.jpg" alt="Book 2" className="rounded shadow w-full h-auto" title="JavaScript Intermediate"/>
-                                <h3 className="mt-4 text-gray-300 font-semibold">JavaScript Intermediate</h3>
+                            <div className="text-center">
+                               <Link target="_blank" href="https://www.sololearn.com/certificates/CC-L30ZTQ8K">
+                               <img src="/images/JAVASCRIPT_SOLOLEARN.jpg" alt="Book 2" className="rounded shadow w-full h-auto" title="JavaScript Intermediate"/>
+                               <h3 className="mt-4 text-gray-300 font-semibold">JavaScript Intermediate</h3>
+                               </Link>
                             </div>
-                            <div className="text-center" onClick={showModalAction}>
-                                <img src="/images/JAVASCRIPT2_SOLOLEARN.jpg" alt="Book 3" className="rounded shadow w-full h-auto" title="Introduction to JavaScript"/>
-                                <h3 className="mt-4 text-gray-300 font-semibold">Introduction to JavaScript</h3>
+                            <div className="text-center">
+                               <Link href="https://www.sololearn.com/certificates/CC-BSGUTNGP" target="_blank">
+                               <img src="/images/JAVASCRIPT2_SOLOLEARN.jpg" alt="Book 3" className="rounded shadow w-full h-auto" title="Introduction to JavaScript"/>
+                               <h3 className="mt-4 text-gray-300 font-semibold">Introduction to JavaScript</h3>
+                               </Link>
                             </div>
-                            <div className="text-center" onClick={showModalAction}>
-                                <img src="/images/CSS_SOLOLEARN.jpg" alt="Book 4" className="rounded shadow w-full h-auto" title="Introduction to CSS
-"/>
-                                <h3 className="mt-4 text-gray-300 font-semibold">Introduction to CSS
-</h3>
+                            <div className="text-center">
+                                <Link href="https://www.sololearn.com/certificates/CC-JJESFYNS" target="_blank">
+                                <img src="/images/CSS_SOLOLEARN.jpg" alt="Book 4" className="rounded shadow w-full h-auto" title="Introduction to CSS"/>
+                                <h3 className="mt-4 text-gray-300 font-semibold">Introduction to CSS</h3>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -221,7 +199,7 @@ const HomePage = () => {
                     </p>
                 </div>
 
-                <div className="mt-8 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 md:grid-cols-2 gap-8">
+                <div className="mt-8 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-8">
 
                     <Link href="/project/login">
                         <div className="text-center">
@@ -264,6 +242,16 @@ const HomePage = () => {
                         <img src="/images/chart.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-full xl:h-[215px] lg:h-[215px] md:h-[215px] object-cover" />
                         </div>
                         <h3 className="mt-4 text-lime-500 font-semibold">Chat Project</h3>
+                        </div>
+                    </Link>
+
+                    
+                    <Link href="https://flandy-rockyliano-mamun-05-tple-004.vercel.app" target="_blank">
+                        <div className="text-center">
+                        <div className="bg-black">
+                        <img src="/images/uts-img.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-full xl:h-[215px] lg:h-[215px] md:h-[215px] object-cover" />
+                        </div>
+                        <h3 className="mt-4 text-lime-500 font-semibold">UTS Project</h3>
                         </div>
                     </Link>
 
