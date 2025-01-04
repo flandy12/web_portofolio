@@ -7,6 +7,7 @@ const HomePage = () => {
     const [title_modal, setTitleModal] = useState('');
     const [show_modal , setModalShow] = useState(false);
     const [image_modal, setImageModal] = useState('');
+    const [projectAll, setProjectAll] = useState('all');
 
     const showModalAction = (e) => {
         // alert(e.target.getAttribut('title'));
@@ -21,6 +22,25 @@ const HomePage = () => {
         }
     }
 
+
+    const onFilter = (e) => {
+        let value = e.target.getAttribute('data-target');
+        setProjectAll(value);
+        console.log(projectAll);
+        // let element =  document.querySelectorAll('.project');
+
+        // for (let index = 0; index < element.length; index++) {
+        //     const value_element = element[index];
+
+        //     const value_element_spesific = value_element.getAttribute('data-target');
+
+        //     if(value_element_spesific == project) {
+        //         console.log(value_element_spesific);
+        //     }
+
+        // }
+      
+    }
 
     return (
         <LayoutsPage>
@@ -197,10 +217,16 @@ const HomePage = () => {
                     <p className="mt-4 ">
                         Berikut adalah project yang telah dibuat
                     </p>
+                    <div className="flex gap-5 w-fit text-center mx-auto my-5">
+                        <button className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" onClick={onFilter} data-target="all">All</button>
+                        <button className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" onClick={onFilter} data-target="sertifikat">Certificate</button>
+                        <button className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" onClick={onFilter} data-target="project">Project</button>
+                    </div>
                 </div>
 
                 <div className="mt-8 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 gap-8">
-
+                    
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll != 'project' ? 'hidden' : 'block'} `} data-target="project">
                     <Link href="/project/login">
                         <div className="text-center">
                             <div className="bg-black">
@@ -209,6 +235,9 @@ const HomePage = () => {
                             <h3 className="mt-4 text-lime-500 font-semibold">Login Page</h3>
                         </div>
                     </Link>
+                    </div>
+
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll != 'project' ? 'hidden' : 'block'}`} data-target="project">
                     <Link href="/project/calculator">
                         <div className="text-center">
                         <div className="bg-black">
@@ -217,7 +246,9 @@ const HomePage = () => {
                         <h3 className="mt-4 text-lime-500 font-semibold">Calculator Project</h3>
                         </div>
                     </Link>
-
+                    </div>
+                    
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll != 'project' ? 'hidden' : 'block'}`} data-target="project">
                     <Link href="https://umc.megacareerexpo.com/">
                         <div className="text-center">
                         <div className="bg-black">
@@ -226,8 +257,10 @@ const HomePage = () => {
                         <h3 className="mt-4 text-lime-500 font-semibold">Uniqlo Project</h3>
                         </div>
                     </Link>
-
-                    <Link href="/project/snake">
+                    </div>
+                    
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll != 'project' ? 'hidden' : 'block'}`} data-target="project">
+                    <Link href="/project/snake"> 
                         <div className="text-center">
                         <div className="bg-black">
                         <img src="/images/snake.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-full xl:h-[215px] lg:h-[215px] md:h-[215px] object-cover" />
@@ -235,7 +268,9 @@ const HomePage = () => {
                         <h3 className="mt-4 text-lime-500 font-semibold">Snake Project</h3>
                         </div>
                     </Link>
-
+                    </div>
+                    
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll != 'project' ? 'hidden' : 'block'}`} data-target="project">
                     <Link href="/project/chart">
                         <div className="text-center">
                         <div className="bg-black">
@@ -244,9 +279,10 @@ const HomePage = () => {
                         <h3 className="mt-4 text-lime-500 font-semibold">Chat Project</h3>
                         </div>
                     </Link>
-
-                    
-                    <Link href="https://flandy-rockyliano-mamun-05-tple-004.vercel.app" target="_blank">
+                    </div>
+                                
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll != 'project' ? 'hidden' : 'block'}`} data-target="project">
+                    <Link href="https://flandy-rockyliano-mamun-05-tple-004.vercel.app" target="_blank" >
                         <div className="text-center">
                         <div className="bg-black">
                         <img src="/images/uts-img.png" alt="Book 1" className="rounded shadow hover:opacity-30 h-full xl:h-[215px] lg:h-[215px] md:h-[215px] object-cover" />
@@ -254,8 +290,59 @@ const HomePage = () => {
                         <h3 className="mt-4 text-lime-500 font-semibold">UTS Project</h3>
                         </div>
                     </Link>
+                    </div>
+
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll == 'sertifikat' ? 'block' : 'hidden'}`}  data-target="sertifikat" >
+                        <Link href="https://www.sololearn.com/certificates/CC-K4PXGPOY" target="_blank">
+                            <img src="/images/HTML_SOLOLEARN.jpg" alt="Book 1" className="rounded shadow w-full h-auto" title="Introduction to HTML"/>
+                            <h3 className="mt-4 text-gray-300 font-semibold">Introduction to HTML
+                            </h3>
+                        </Link>
+                    </div>
+                    
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll == 'sertifikat' ? 'block' : 'hidden'}`} data-target="sertifikat" >
+                        <Link target="_blank" href="https://www.sololearn.com/certificates/CC-L30ZTQ8K">
+                        <img src="/images/JAVASCRIPT_SOLOLEARN.jpg" alt="Book 2" className="rounded shadow w-full h-auto" title="JavaScript Intermediate"/>
+                        <h3 className="mt-4 text-gray-300 font-semibold">JavaScript Intermediate</h3>
+                        </Link>
+                    </div>
+
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll == 'sertifikat' ? 'block' : 'hidden'}`} data-target="sertifikat" >
+                        <Link href="https://www.sololearn.com/certificates/CC-BSGUTNGP" target="_blank">
+                        <img src="/images/JAVASCRIPT2_SOLOLEARN.jpg" alt="Book 3" className="rounded shadow w-full h-auto" title="Introduction to JavaScript"/>
+                        <h3 className="mt-4 text-gray-300 font-semibold">Introduction to JavaScript</h3>
+                        </Link>
+                    </div>
+
+                    <div className={`project ${projectAll == 'all' ? 'block' : projectAll == 'sertifikat' ? 'block' : 'hidden'}`} data-target="sertifikat" >
+                        <Link href="https://www.sololearn.com/certificates/CC-JJESFYNS" target="_blank">
+                        <img src="/images/CSS_SOLOLEARN.jpg" alt="Book 4" className="rounded shadow w-full h-auto" title="Introduction to CSS"/>
+                        <h3 className="mt-4 text-gray-300 font-semibold">Introduction to CSS</h3>
+                        </Link>
+                    </div>
 
                 </div>
+
+                <div className="py-10">
+                <div className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" >
+                        <h2 className="text-4xl font-bold text-black my-5">Lokasi</h2>
+                    </div>
+                    <div className="mapouter" style={{ position: "relative", textAlign: "right", width: "100%", height: "500px" }}>
+                            <div className="gmap_canvas" style={{ overflow: "hidden", background: "none!important", width: "100%", height: "500px" }}>
+                                <iframe
+                                className="gmap_iframe"
+                                style={{ width: "100%", height: "500px", border: "none" }}
+                                scrolling="no"
+                                marginHeight="0"
+                                marginWidth="0"
+                                src="https://maps.google.com/maps?width=650&amp;height=500&amp;hl=en&amp;q=unpam viktor&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                title="Google Map"
+                                ></iframe>
+                                <a href="https://sprunkin.com/">Sprunki Incredibox</a>
+                            </div>
+                            </div>
+                </div>
+
                </div>
             </section>
 

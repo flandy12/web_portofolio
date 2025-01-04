@@ -63,3 +63,7 @@ a {
   margin: auto;
   background-repeat: no-repeat;
 }
+
+.project {
+  display: 'block';
+}
