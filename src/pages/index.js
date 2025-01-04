@@ -217,7 +217,7 @@ const HomePage = () => {
                     <p className="mt-4 ">
                         Berikut adalah project yang telah dibuat
                     </p>
-                    <div className="flex gap-5 w-fit text-center mx-auto my-5">
+                    <div className="flex flex-wrap gap-5 w-fit text-center mx-auto my-5">
                         <button className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" onClick={onFilter} data-target="all">All</button>
                         <button className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" onClick={onFilter} data-target="sertifikat">Certificate</button>
                         <button className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" onClick={onFilter} data-target="project">Project</button>
@@ -324,23 +324,10 @@ const HomePage = () => {
                 </div>
 
                 <div className="py-10">
-                <div className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" >
+                    <div className="bg-lime-500 w-fit px-10 py-0 rounded mx-auto" >
                         <h2 className="text-4xl font-bold text-black my-5">Lokasi</h2>
                     </div>
-                    <div className="mapouter" style={{ position: "relative", textAlign: "right", width: "100%", height: "500px" }}>
-                            <div className="gmap_canvas" style={{ overflow: "hidden", background: "none!important", width: "100%", height: "500px" }}>
-                                <iframe
-                                className="gmap_iframe"
-                                style={{ width: "100%", height: "500px", border: "none" }}
-                                scrolling="no"
-                                marginHeight="0"
-                                marginWidth="0"
-                                src="https://maps.google.com/maps?width=650&amp;height=500&amp;hl=en&amp;q=unpam viktor&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                                title="Google Map"
-                                ></iframe>
-                                <a href="https://sprunkin.com/">Sprunki Incredibox</a>
-                            </div>
-                            </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3738166352864!2d106.68896592378186!3d-6.345614212080936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e50078ae00b1%3A0x81a60674ba49b072!2sUnpam%20Viktor!5e0!3m2!1sen!2sid!4v1735982310458!5m2!1sen!2sid" className="w-full h-96" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                </div>
